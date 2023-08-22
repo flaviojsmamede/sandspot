@@ -1,0 +1,39 @@
+.banner {
+  background-image: url(https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  height: 640px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  color: $light-gray;
+  text-align: center;
+  font-family: $headers-font;
+  font-size: 40px;
+  font-style: bold;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 13px 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $yellow;
+  color: $gray;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #ffbe46;
+}
