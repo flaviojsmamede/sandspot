@@ -1,13 +1,5 @@
 .banner {
-  // background-color: $yellow;
-  // background-image: url(https://images.pexels.com/photos/1045113/pexels-photo-1045113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-image: url(https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
-  // url(https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2),
-  // lightgray 50% / cover no-repeat,
-  // url(https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2),
-  // lightgray 0px -239.368px / 100% 149.611% no-repeat;
   height: 640px;
   background-size: cover;
   background-position: center;
@@ -16,11 +8,6 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  // filter: brightness(80%);
-}
-
-.banner-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -35,7 +22,6 @@
 }
 
 .button {
-  // display: inline-flex;
   padding: 13px 25px;
   justify-content: space-between;
   align-items: center;
