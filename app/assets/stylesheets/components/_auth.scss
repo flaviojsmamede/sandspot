@@ -1,0 +1,25 @@
+.auth {
+  width: 400px;
+  margin-top: 60px;
+  background-color: white ;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.auth a {
+  color: rgb(164, 164, 164);
+  font-size: 15px;
+}
+
+.auth a:hover {
+  color: gray;
+}
+
+/* ------------MEDIA QUERIES (SMALL DEVICES----------- */
+
+@media screen and (max-width: 600px) {
+  .auth {
+    width: auto;
+  }
+
+}
