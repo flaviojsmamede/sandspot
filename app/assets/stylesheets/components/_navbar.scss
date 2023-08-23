@@ -16,7 +16,6 @@
   color: $yellow;
 }
 
-
 .navbar-sandspot {
   justify-content: space-between;
   background: white;
@@ -31,11 +30,10 @@
   width: 40px;
 }
 
-/* ------------MEDIA QUERIES (SMALL DEVICES----------- */
+/* ------------ MEDIA QUERIES (SMALL DEVICES) ----------- */
 
 @media screen and (max-width: 600px) {
   .navbar-brand {
     display: none;
   }
-
 }
