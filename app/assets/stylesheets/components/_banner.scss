@@ -1,5 +1,4 @@
 .banner {
-  background-image: url(https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   height: 640px;
   background-size: cover;
   background-position: center;
@@ -8,6 +7,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  background-image: url(https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
 
 .title {
@@ -19,6 +19,7 @@
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 30px #000000;
 }
 
 .button {
@@ -37,4 +38,3 @@
 .button:hover {
   background-color: #ffbe46;
 }
-

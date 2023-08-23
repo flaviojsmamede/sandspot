@@ -1,4 +1,13 @@
 <%= render "banner" %>
 
-<h2>Most popular</h2>
 
+<div class="container pt-4">
+  <h2>Most popular</h2>
+  <div class="d-flex flex-direction-row gap-5 mt-3 mb-5">
+    <% @beaches.each do |beach| %>
+      <%= link_to beach_path(beach.id) do %>
+        <%= render "shared/card", beach: beach %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

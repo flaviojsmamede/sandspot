@@ -1,12 +1,9 @@
-<div class="beach-card">
-  <div class="d-flex flex-column">
-    <div>
-      <%= image_tag beach.image_url, alt: "beach image", class: "card-image" %>
-    </div>
-    <div class="card-body beach-card">
-      <h3 class="card-title"><%= beach.name %></h3>
-      <p class="card-text"><%= beach.location %></p>
+<div class="card border-0" style="width: 18rem;">
+  <%= image_tag beach.image_url, alt: "beach image", class: "card-image" %>
+  <div class="card-body ps-0">
+    <h4 class="card-title"><%= beach.name %></h4>
+      <p class="card-text m-0"><%= beach.location %></p>
       <p class="card-text">From 50€</p>
-    </div>
   </div>
 </div>
+
