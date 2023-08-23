@@ -17,10 +17,6 @@
   }
 }
 
-// .button-packs:hover {
-//   background-color: #FFBE46;
-// }
-
 .nav-link{
   color: #5e5c5b;
   font-weight: 800;
@@ -38,8 +34,10 @@
 
 .nav-tabs .nav-item .nav-link.active {
   border-bottom: 3px solid $yellow;
+  background-color: white;
+
 }
 
-// .{
-//       background-color: #FFBE46;
-// }
+.packs-card{
+  background-color: white;
+}
