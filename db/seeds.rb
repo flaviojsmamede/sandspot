@@ -21,3 +21,13 @@ Beach.create(name: "Mikonos Beach", location: "Mikonos, Greece", description: "S
 Beach.create(name: "Miami Beach", location: "Miami, USA", description: "The southern end, South Beach, is known for its international cachet with models and celebrities, and its early-20th-century architecture in the Art Deco Historic district.", image_url: "https://asset.skoiy.com/mhgicrxyofyowxac/mtc5mymqj3bt.jpg?q=90")
 
 Beach.create(name: "Bali Beach", location: "Bali, Indonesia", description: "Whether you’re looking to party the day away, settle in for a long lunch with the family, or sip on happy hour cocktails while the sun sets over the Indian Ocean.", image_url: "https://media.cntraveler.com/photos/5c263e13a6a145617b7c77ba/16:9/w_2580%2Cc_limit/Karma-Beach-Club_Karma-Beach-Bali-.jpg")
+
+Beach.create(name: "Marinha Beach", location: "Algarve, Portugal", description: "One of the best beaches in Algarve. Enjoy the clifs and the exquisit sun set.", image_url: "https://st3.idealista.pt/cms/arquivos/styles/idcms_social_large_desktop/public/2023-06/media/image/praia-da-marinha.jpg?VersionId=8xKrjI3m9lKTdjKqLIpnsMu4ejriHBRn&fv=HszjHIPt&itok=hRQ4YZQ5")
+
+Beach.create(name: "Formentera Beach", location: "Formentera island, Spain", description: "Formentera is a small spanish island in the Mediterranean sea will blue christal waters.", image_url: "https://www.villasformentera.com/wp-content/uploads/2013/05/Cala-Saona-playa.jpg")
+
+Beach.create(name: "Porto de Galinhas Beach", location: "Pernanbuco, Brazil", description: "Porto de Galinhas, is a quaint beach town that is located in Pernambuco, in north-eastern Brazil. ", image_url: "https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-umbrella-chair-blue-sky_74190-8827.jpg?w=1380&t=st=1692787323~exp=1692787923~hmac=89a01e27b74005dff519d8397c35294ff511dc4e01972a191a4219136efef72b")
+
+Beach.create(name: "Hamelin Bay Beach", location: "Hamelin Bay, Australia", description: "Hamelin Bay is a special piece of WA coastline, excellent for snorkelling, diving and fishing.", image_url: "https://media-cdn.tripadvisor.com/media/photo-s/02/35/5c/2c/hamelin-bay-beach.jpg")
+
+Beach.create(name: "Pa Tong Beach", location: "Phuket, Thailand", description: "Wide 2,85 km long stretch of white soft sand and its bustling nightlife. Patong Beach is the most popular, busiest, and most crowded beach in Phuket.", image_url: "")
