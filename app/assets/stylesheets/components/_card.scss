@@ -1,14 +1,19 @@
 .beach-card {
-  border: none;
+  // border: none;
   // padding: 20px;
   // width: 200px;
-  align-items: center;
+  // align-items: center;
+  // margin: 20px;
+  // display: flex;
+  // justify-content: center;
 }
 
 .card-image {
   border-radius: 15px;
-  height: 250px;
-  // width: 150px;
-  background-size: cover;
+  margin-bottom: 10px;
+  height: 320px;
+  // width: 315px;
+  background-size: auto auto;
   background-position: center;
+  // margin: auto;
 }
