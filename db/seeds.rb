@@ -30,4 +30,4 @@ Beach.create(name: "Porto de Galinhas Beach", location: "Pernanbuco, Brazil", de
 
 Beach.create(name: "Hamelin Bay Beach", location: "Hamelin Bay, Australia", description: "Hamelin Bay is a special piece of WA coastline, excellent for snorkelling, diving and fishing.", image_url: "https://media-cdn.tripadvisor.com/media/photo-s/02/35/5c/2c/hamelin-bay-beach.jpg")
 
-Beach.create(name: "Pa Tong Beach", location: "Phuket, Thailand", description: "Wide 2,85 km long stretch of white soft sand and its bustling nightlife. Patong Beach is the most popular, busiest, and most crowded beach in Phuket.", image_url: "")
+Beach.create(name: "Pa Tong Beach", location: "Phuket, Thailand", description: "Wide 2,85 km long stretch of white soft sand and its bustling nightlife. Patong Beach is the most popular, busiest, and most crowded beach in Phuket.", image_url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/fc/b9/e4/phi-phi-island.jpg?w=1600&h=-1&s=1")
