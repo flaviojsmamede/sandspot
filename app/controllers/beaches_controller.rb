@@ -8,4 +8,9 @@ class BeachesController < ApplicationController
   def show
     @beach = Beach.find(params[:id])
   end
+
+  def destroy
+    sign_out(current_user)
+    redirect_to beaches_path, notice: "You have been logged out"
+  end
 end
