@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-sandspot">
   <div class="container-fluid custom-container">
-    <a class="navbar-brand" href="#">SandSpot</a>
+    <a class="navbar-brand" href="/">SandSpot</a>
 
     <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get">
       <div class="search-form-control form-group">
@@ -13,9 +13,9 @@
 
     <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=2000" />
     <div class="dropdown-menu dropdown-menu-end dropdown" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Log in</a>
-      <a class="dropdown-item" href="#">Sign up</a>
-      <%# <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a> %>
+      <%= link_to "Login", user_session_path, class: "dropdown-item" %>
+      <%= link_to "Signup", new_user_session_path, class: "dropdown-item" %>
+      <%= link_to "Logout", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
     </div>
   </div>
 </div>
