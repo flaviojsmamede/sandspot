@@ -2,7 +2,7 @@ footer {
   width: 100%;
   background-color: white;
   color: $gray;
-  text-align: center;
+  text-align: left;
   font-family: $body-font;
   padding: 20px;
 }
@@ -10,7 +10,7 @@ footer {
 footer ul {
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 10px;
   color: #b5b5b5;
@@ -32,4 +32,26 @@ footer a {
 footer i {
   font-size: 2px;
   color: $gray;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #555;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+      background-color: #007BFF;
+      color: #fff;
+  }
 }
