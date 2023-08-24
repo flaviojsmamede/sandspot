@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row d-flex flex-row mt-5 mb-5 justify-content-between gap-5">
+    <div class="col">
+      <h3 class="mb-4">My Profile</h3>
+      <div class="d-flex flex-row justify-content-between border-bottom mb-3">
+        <div>
+          <p>Full Name</p>
+          <p class="text-secondary">User name</p>
+        </div>
+        <div>
+          <a href="#" class="text-secondary">Edit</a>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between border-bottom mb-3">
+        <div>
+          <p>Email</p>
+          <p class="text-secondary">Email</p>
+        </div>
+        <div>
+          <a href="#" class="text-secondary">Edit</a>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between border-bottom mb-3">
+        <div>
+          <p>Password</p>
+          <p class="text-secondary">Password</p>
+        </div>
+        <div>
+          <a href="#" class="text-secondary">Edit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h3 class="mb-4">My Bookings</h3>
+      <div class="d-flex flex-column gap-3">
+      <% #@bookings.each do |booking| %>
+          <div class="d-flex flex-row gap-3">
+            <div class="rounded-3" style="width: 70px; height: 70px; background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.pexels.com/photos/4712714/pexels-photo-4712714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
+            <%# image_path @beach.image_url %>
+            <%# <p>image</p> %>
+          </div>
+          <div>
+            <h6>Beach name</h6>
+            <p class="text-secondary">Date</p>
+          </div>
+      <%# end %>
+      </div>
+    </div>
+  </div>
+</div>
