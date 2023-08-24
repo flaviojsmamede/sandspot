@@ -3,6 +3,13 @@ class BeachesController < ApplicationController
 
   def index
     @beaches = Beach.all
+
+    @markers = @beaches.geocoded.map do |beach|
+      {
+        lat: beach.latitude,
+        lng: beach.longitude
+      }
+    end
   end
 
   def show
