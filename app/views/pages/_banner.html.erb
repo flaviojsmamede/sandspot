@@ -1,4 +1,30 @@
-<div class="banner d-flex flex-column">
-  <h1 class="title">Dunes & Dreams: Crafting <br> Memories by the Seashore</h1>
-  <%= link_to "Book Now", beaches_path, class: "button" %>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="banner d-flex flex-column" style="background-image: url(https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+        <h1 class="title">Dunes & Dreams: Crafting <br> Memories by the Seashore</h1>
+        <%= link_to "Book Now", beaches_path, class: "button" %>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner d-flex flex-column" style="background-image: url(https://www.viajali.com.br/wp-content/uploads/2018/09/praias-em-portugal-0.jpg);">
+        <h1 class="title">Dunes & Dreams: Crafting <br> Memories by the Seashore</h1>
+        <%= link_to "Book Now", beaches_path, class: "button" %>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <div class="banner d-flex flex-column" style="background-image: url(https://vidacigana.com/wp-content/uploads/2021/03/melhores-praias-lisboa-23.jpg);">
+        <h1 class="title">Dunes & Dreams: Crafting <br> Memories by the Seashore</h1>
+        <%= link_to "Book Now", beaches_path, class: "button" %>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
