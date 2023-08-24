@@ -3,7 +3,7 @@ class BeachesController < ApplicationController
 
   def index
     @beaches = Beach.all
-    
+
     if params[:query].present?
       sql_subquery = "name ILIKE :query OR location ILIKE :query"
       @beaches = @beaches.where(sql_subquery, query: "%#{params[:query]}%")
@@ -14,7 +14,8 @@ class BeachesController < ApplicationController
         lat: beach.latitude,
         lng: beach.longitude
       }
-    end 
+    end
+  end
 
   def show
     @beach = Beach.find(params[:id])
