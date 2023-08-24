@@ -1,2 +1,8 @@
-<h4>Description</h4>
-<p><%= @beach.description %></p>
+<h4 class="mb-4">Beach Description</h4>
+<p class="h5">
+  <span
+    data-controller = "typed"
+    data-typed-strings-value="<%= [@beach.description] %>"
+    >
+  </span>
+</p>
