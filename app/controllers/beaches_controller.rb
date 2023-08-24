@@ -19,5 +19,10 @@ class BeachesController < ApplicationController
 
   def show
     @beach = Beach.find(params[:id])
+
+    @markers = [{
+      lat: @beach.latitude,
+      lng: @beach.longitude
+    }]
   end
 end
