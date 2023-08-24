@@ -11,7 +11,6 @@
     </li>
   </ul>
   <div class="tab-content packs-card" id="myTabContent">
-
     <div class="tab-pane fade show active p-3" id="home" role="tabpanel" aria-labelledby="home-tab">
       <h3 class = "text-center"><strong><%= @beach.packs[0].price %></strong>€ day</h3>
       <h5>Description</h4>
@@ -20,7 +19,13 @@
         <li><%= bullet %></li>
         <% end %>
       </ul>
+
+      <%= simple_form_for [@beach.packs[0],@booking] do |f| %>
+       <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+       <%= f.submit "Book Now", class: "button-packs" %>
+      <% end %>
     </div>
+
     <div class="tab-pane fade p-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
       <h3 class = "text-center"><strong><%= @beach.packs[1].price %></strong>€ day</h3>
       <h5>Description</h4>
@@ -29,7 +34,14 @@
         <li><%= bullet %></li>
         <% end %>
       </ul>
+
+      <%= simple_form_for [@beach.packs[1],@booking] do |f| %>
+       <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+       <%= f.submit "Book Now", class: "button-packs" %>
+      <% end %>
     </div>
+
+
     <div class="tab-pane fade p-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
       <h3 class = "text-center"><strong><%= @beach.packs[2].price %></strong>€ day</h3>
       <h5>Description</h4>
@@ -38,10 +50,10 @@
         <li><%= bullet %></li>
         <% end %>
       </ul>
+      <%= simple_form_for [@beach.packs[2],@booking] do |f| %>
+       <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+       <%= f.submit "Book Now", class: "button-packs" %>
+      <% end %>
     </div>
-
-    <input class = "form-control rounded-3 w-100 text-center p-1 mb-3" type="text"  data-controller="datepicker" placeholder="Choose a date for sunbathing!">
-
-    <button class = "button-packs">Book Now</button>
   </div>
 </div>

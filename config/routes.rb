@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   get "profile", to: 'pages#profile'
 
   resources :beaches, only: [:index, :show]
+
+  resources :packs, only: [] do
+    resources :bookings, only: [:create]
+  end
 end
