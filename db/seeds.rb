@@ -9,7 +9,7 @@
 # t.string "location"
 # t.text "description"
 # t.string "image_url"
-
+Pack.destroy_all
 Beach.destroy_all
 
 Beach.create(
@@ -21,6 +21,28 @@ Beach.create(
   continent: "Americas"
 )
 
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
+)
+
 Beach.create(
   name: "Carcavelos Beach",
   location: "Lisbon, Portugal",
@@ -28,6 +50,28 @@ Beach.create(
   image_url: "https://www.lisbonbeachesguide.com/images/carcavelos-beach-lisbon.jpg",
   address: "Carcavelos Beach",
   continent: "Europe"
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
 )
 
 Beach.create(
@@ -39,6 +83,28 @@ Beach.create(
   continent: "Europe"
 )
 
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
+)
+
 Beach.create(
   name: "Miami Beach",
   location: "Miami, USA",
@@ -46,6 +112,28 @@ Beach.create(
   image_url: "https://asset.skoiy.com/mhgicrxyofyowxac/mtc5mymqj3bt.jpg?q=90",
   address: "Miami Beach, Flórida, Estados Unidos",
   continent: "Americas"
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
 )
 
 Beach.create(
@@ -57,6 +145,28 @@ Beach.create(
   continent: "Asia"
 )
 
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
+)
+
 Beach.create(
   name: "Inatel Beach",
   location: "Algarve, Portugal",
@@ -64,6 +174,28 @@ Beach.create(
   image_url: "https://st3.idealista.pt/cms/arquivos/styles/idcms_social_large_desktop/public/2023-06/media/image/praia-da-marinha.jpg?VersionId=8xKrjI3m9lKTdjKqLIpnsMu4ejriHBRn&fv=HszjHIPt&itok=hRQ4YZQ5",
   address: "Av. Infante Dom Henrique N68 8200, Albufeira",
   continent: "Europe"
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
 )
 
 Beach.create(
@@ -75,6 +207,28 @@ Beach.create(
   continent: "Europe"
 )
 
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
+)
+
 Beach.create(
   name: "Porto de Galinhas Beach",
   location: "Pernanbuco, Brazil",
@@ -82,6 +236,28 @@ Beach.create(
   image_url: "https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-umbrella-chair-blue-sky_74190-8827.jpg?w=1380&t=st=1692787323~exp=1692787923~hmac=89a01e27b74005dff519d8397c35294ff511dc4e01972a191a4219136efef72b",
   address: "Ipojuca - PE, Brasil",
   continent: "Americas"
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
 )
 
 Beach.create(
@@ -93,6 +269,28 @@ Beach.create(
   continent: "Oceania"
 )
 
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
+)
+
 Beach.create(
   name: "Karon Beach",
   location: "Phuket, Thailand",
@@ -100,4 +298,25 @@ Beach.create(
   image_url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/fc/b9/e4/phi-phi-island.jpg?w=1600&h=-1&s=1",
   address: "Karon, Phuket 83100, Tailândia",
   continent: "Asia"
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
+  price: "100",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Premium",
+  description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "100",
+  beach: Beach.last
 )
