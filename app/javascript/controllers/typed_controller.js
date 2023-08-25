@@ -12,7 +12,7 @@ export default class extends Controller {
 
     new Typed(this.element, {
       strings: this.stringsValue,
-      typeSpeed: 70
+      typeSpeed: 20
     })
   }
 }
