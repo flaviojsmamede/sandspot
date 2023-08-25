@@ -3,3 +3,16 @@
   background-size: cover;
   background-position: center;
 }
+
+
+/* ------------ MEDIA QUERIES (SMALL DEVICES) ----------- */
+
+@media screen and (max-width: 600px) {
+  .filter {
+    display: none;
+  }
+  .maps {
+    width: 100%;
+  }
+
+}
