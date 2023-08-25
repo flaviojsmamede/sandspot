@@ -2,19 +2,10 @@
   <div class="row d-flex flex-row mt-5 mb-5">
     <div class="col">
       <h3 class="mb-4">My Bookings</h3>
-      <div class="d-flex flex-row justify-content-between border-bottom mb-3">
-      <% @bookings.each do |booking| %>
-        <div>
-          
-        </div>
-        <div>
-          <h6><%= booking.beach.name %></h6>
-          <p class="text-secondary"><%= booking.date %></p>
-          <p class="text-secondary"><%= booking.status %></p>
-        </div>
-      <% end %>
+      <div class="justify-content-between mb-3">
+        <% @bookings.each do |booking| %>
+          <%= render "card_bookings", booking: booking %>
+        <% end %>
     </div>
   </div>
 </div>
-
-<%# d-flex flex-column justify-content-between %>
