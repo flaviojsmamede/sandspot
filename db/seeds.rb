@@ -40,7 +40,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -71,7 +71,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -102,7 +102,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -133,7 +133,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -164,7 +164,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -187,7 +187,7 @@ Pack.create(
 Pack.create(
   name: "Standart",
   description: "8m2 of sand space exclusively for you! - Umbrella included.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 
 )
@@ -226,7 +226,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -257,7 +257,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -318,6 +318,6 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
