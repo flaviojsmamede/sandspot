@@ -27,11 +27,11 @@
     <div class="col">
       <h3 class="mb-4">My Bookings</h3>
       <div class="d-flex flex-column gap-3">
-      <% @user_bookings.each do |user_booking| %>
+      <% @bookings.each do |booking| %>
           <div class="d-flex justify-content-between">
-            <h6><%= user_booking[:beach].name %></h6>
-            <p class="text-secondary"><%= user_booking[:booking].date %></p>
-            <p class="text-secondary"><%= user_booking[:booking].status %></p>
+            <h6><%= booking.beach.name %></h6>
+            <p class="text-secondary"><%= booking.date %></p>
+            <p class="text-secondary"><%= booking.status %></p>
           </div>
       <% end %>
       </div>

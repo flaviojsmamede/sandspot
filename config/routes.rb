@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :beaches, only: [:index, :show]
 
   resources :packs, only: [] do
-    resources :bookings, only: [:create]
+    resources :bookings, only: [:create, :show]
   end
 end
