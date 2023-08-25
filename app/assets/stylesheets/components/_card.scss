@@ -1,7 +1,12 @@
 .card-image {
+  object-fit: cover;
   border-radius: 15px;
   margin-bottom: 10px;
   height: 320px;
   background-size: auto auto;
   background-position: center;
+}
+
+.card-beach {
+  margin-bottom: 30px;
 }
