@@ -12,7 +12,7 @@
   </ul>
   <div class="tab-content packs-card" id="myTabContent">
 
-    <div class="tab-pane fade show active p-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="tab-pane fade show active p-3" id="home" role="tabpanel" aria-labelledby="home-tab" data-controller = "confirm-booking">
       <h3 class = "text-center"><strong><%= @beach.packs[0].price %></strong>€ day</h3>
       <h5>Description</h4>
       <ul>
@@ -22,8 +22,8 @@
       </ul>
 
       <%= simple_form_for [@beach.packs[0],@booking] do |f| %>
-       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker" }, placeholder: "Select a date" } %>
-        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker", confirm_booking_target: "date" }, placeholder: "Select a date" } %>
+        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal" data-action="click->confirm-booking#getDate" >
           Book Now
         </button>
 
@@ -36,7 +36,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Booking Details Here !!!!
+                <p><strong>Beach:</strong> <%= @beach.name %></p>
+                <p><strong>Pack:</strong> <%= @beach.packs[0].name %></p>
+                <p><strong>Date:</strong> <span data-confirm-booking-target = "modalDate"></span></p>
+                <p><strong>Price:</strong> <%= @beach.packs[0].price %>€</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="modal-cancel-btn" data-bs-dismiss="modal">Cancel Booking</button>
@@ -48,7 +51,7 @@
       <% end %>
     </div>
 
-    <div class="tab-pane fade p-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="tab-pane fade p-3" id="profile" role="tabpanel" aria-labelledby="profile-tab" data-controller = "confirm-booking">
       <h3 class = "text-center"><strong><%= @beach.packs[1].price %></strong>€ day</h3>
       <h5>Description</h4>
       <ul>
@@ -58,8 +61,8 @@
       </ul>
 
       <%= simple_form_for [@beach.packs[1],@booking] do |f| %>
-       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker" }, placeholder: "Select a date" } %>
-        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker", confirm_booking_target: "date" }, placeholder: "Select a date" } %>
+        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-action="click->confirm-booking#getDate" >
           Book Now
         </button>
 
@@ -72,7 +75,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Booking Details Here !!!!
+                <p><strong>Beach:</strong> <%= @beach.name %></p>
+                <p><strong>Pack:</strong> <%= @beach.packs[1].name %></p>
+                <p><strong>Date:</strong> <span data-confirm-booking-target = "modalDate"></span></p>
+                <p><strong>Price:</strong> <%= @beach.packs[1].price %>€</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="modal-cancel-btn" data-bs-dismiss="modal">Cancel Booking</button>
@@ -84,7 +90,7 @@
       <% end %>
     </div>
 
-    <div class="tab-pane fade p-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="tab-pane fade p-3" id="contact" role="tabpanel" aria-labelledby="contact-tab" data-controller = "confirm-booking">
       <h3 class = "text-center"><strong><%= @beach.packs[2].price %></strong>€ day</h3>
       <h5>Description</h4>
       <ul>
@@ -94,8 +100,8 @@
       </ul>
 
       <%= simple_form_for [@beach.packs[2],@booking] do |f| %>
-       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker" }, placeholder: "Select a date" } %>
-        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+       <%= f.input :date, as: :string, label: "When do you want to go?", input_html: { data: { controller: "datepicker", confirm_booking_target: "date" }, placeholder: "Select a date" } %>
+        <button type="button" class="button-packs" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-action="click->confirm-booking#getDate" >
           Book Now
         </button>
 
@@ -108,7 +114,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Booking Details Here !!!!
+                <p><strong>Beach:</strong> <%= @beach.name %></p>
+                <p><strong>Pack:</strong> <%= @beach.packs[2].name %></p>
+                <p><strong>Date:</strong> <span data-confirm-booking-target = "modalDate"></span></p>
+                <p><strong>Price:</strong> <%= @beach.packs[2].price %>€</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="modal-cancel-btn" data-bs-dismiss="modal">Cancel Booking</button>
