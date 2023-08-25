@@ -27,17 +27,13 @@
     <div class="col">
       <h3 class="mb-4">My Bookings</h3>
       <div class="d-flex flex-column gap-3">
-      <% #@bookings.each do |booking| %>
-          <div class="d-flex flex-row gap-3">
-            <div class="rounded-3" style="width: 70px; height: 70px; background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.pexels.com/photos/4712714/pexels-photo-4712714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')">
-            <%# image_path @beach.image_url %>
-            <%# <p>image</p> %>
+      <% @user_bookings.each do |user_booking| %>
+          <div class="d-flex justify-content-between">
+            <h6><%= user_booking[:beach].name %></h6>
+            <p class="text-secondary"><%= user_booking[:booking].date %></p>
+            <p class="text-secondary"><%= user_booking[:booking].status %></p>
           </div>
-          <div>
-            <h6>Beach Name</h6>
-            <p class="text-secondary"><%= @bookings.date %></p>
-          </div>
-      <%# end %>
+      <% end %>
       </div>
     </div>
   </div>
