@@ -1,6 +1,6 @@
 <div class="">
   <div class="card-product d-flex flex-row gap-3 mb-3 pb-2">
-    <img class="rounded-4" style="width: 120px; height: 130px;" src=<%= booking.beach.image_url %>/>
+    <%= image_tag booking.beach.image_url, class: "rounded-4", width: 120, height: 120  %>
     <div class="card-product-infos">
       <h5><%= booking.beach.name %></h5>
       <p class="text-secondary"><%= booking.date %></p>
