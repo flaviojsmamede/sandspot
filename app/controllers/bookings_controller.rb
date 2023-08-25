@@ -5,7 +5,6 @@ class BookingsController < ApplicationController
   end
 
   def create
-    # @beach = Beach.find(params[:id])
     @booking = Booking.new(booking_params)
     @booking.pack = Pack.find(params[:pack_id])
     @booking.user = current_user
