@@ -9,13 +9,18 @@ class BookingsController < ApplicationController
     @booking.pack = Pack.find(params[:pack_id])
     @booking.user = current_user
 
-
     if @booking.save
-      redirect_to beaches_path, notice: "Booking was successfully created."
+      redirect_to bookings_path, notice: "Booking was successfully created."
     else
+      @beach = @booking.beach
       render "beaches/show", status: :unprocessable_entity
     end
   end
+
+  def index
+    @bookings = Booking.where(user:current_user)
+  end
+
   private
 
   def booking_params

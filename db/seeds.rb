@@ -42,7 +42,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -73,7 +73,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -104,7 +104,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -135,7 +135,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -166,7 +166,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -189,7 +189,7 @@ Pack.create(
 Pack.create(
   name: "Standart",
   description: "8m2 of sand space exclusively for you! - Umbrella included.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 
 )
@@ -228,7 +228,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -259,7 +259,7 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
-  price: "100",
+  price: "200",
   beach: Beach.last
 )
 
@@ -320,6 +320,31 @@ Pack.create(
 Pack.create(
   name: "Premium",
   description: "10m2 of sand space exclusively for you! - Umbrella included. -2 beach chairs included. - 2 fruit cocktails.",
+  price: "200",
+  beach: Beach.last
+)
+
+Beach.create(
+  name: "Praia de Wimbi",
+  location: "Pemba, Mozambique",
+  description: "Wide 2,85 km long stretch of white soft sand and its bustling nightlife. Patong Beach is the most popular, busiest, and most crowded beach in Phuket.",
+  image_url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/fc/b9/e4/phi-phi-island.jpg?w=1600&h=-1&s=1",
+  address: "2GMM+MJQ, Pemba, Moçambique",
+  continent: "Africa",
+  latitude: -12.971771986361226,
+  longitude:  40.542948296803885
+)
+
+Pack.create(
+  name: "Basic",
+  description: "4m2 of sand space just for you to enjoy! - Umbrella not included. Bring your's!",
+  price: "50",
+  beach: Beach.last
+)
+
+Pack.create(
+  name: "Standart",
+  description: "8m2 of sand space exclusively for you! - Umbrella included.",
   price: "100",
   beach: Beach.last
 )
@@ -632,6 +657,7 @@ Pack.create(
   price: "100",
   beach: Beach.last
 )
+
 
 Pack.create(
   name: "Premium",
@@ -961,3 +987,4 @@ Beach.create(
 
 
   p "Finished Seeding #{Beach.all.count} - beaches, and #{Pack.all.count} packs, location is good on #{Beach.geocoded.count} beaches"
+

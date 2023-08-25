@@ -1,9 +1,8 @@
-<div class="card border-0" style="width: 18rem;">
+<div class="card border-0 card-beach" style="width: 17rem;">
   <%= image_tag beach.image_url, alt: "beach image", class: "card-image" %>
-  <div class="card-body ps-0">
+  <div class="card-body ps-0 ">
     <h4 class="card-title"><%= beach.name %></h4>
-      <p class="card-text m-0"><%= beach.location %></p>
-      <p class="card-text">From 50€</p>
+    <h5 class="card-text m-0"><%= beach.location %></h5>
+    <p class="card-text">From 50€ <span style="font-size: 10px">/day</span></p>
   </div>
 </div>
-

@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :packs, only: [] do
     resources :bookings, only: [:create]
   end
+
+  resources :bookings, only: :index
 end

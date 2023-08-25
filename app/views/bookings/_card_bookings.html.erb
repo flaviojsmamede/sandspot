@@ -1,0 +1,11 @@
+<div class="">
+  <div class="d-flex flex-row gap-3 mb-3 pb-2 align-items-center">
+    <%= image_tag booking.beach.image_url, class: "rounded-4", width: 120, height: 120  %>
+    <div>
+      <h5><%= booking.beach.name %></h5>
+      <p class="description-text"><%= booking.date %></p>
+      <p class="description-text"><%= booking.pack.name %></p>
+      <p class="description-text"><%= booking.status.capitalize %></p>
+    </div>
+  </div>
+</div>

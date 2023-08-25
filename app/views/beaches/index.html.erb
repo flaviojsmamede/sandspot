@@ -1,37 +1,21 @@
-<div class="p-3" style="margin-left: 50px;">
-  <div class="globe-icons text-center">
-    <%= link_to beaches_path(query: "africa") do %>
-      <i class="fa-solid fa-earth-africa"></i>
-      <p>Africa</p>
-    <% end %>
-    <%= link_to beaches_path(query: "america") do %>
-      <i class="fa-solid fa-earth-americas"></i>
-      <p>America</p>
-    <% end %>
-    <%= link_to beaches_path(query: "asia") do %>
-      <i class="fa-solid fa-earth-asia"></i>
-      <p>Asia</p>
-    <% end %>
-    <%= link_to beaches_path(query: "europe") do %>
-      <i class="fa-solid fa-earth-europe"></i>
-      <p>Europe</p>
-    <% end %>
-    <%= link_to beaches_path(query: "oceania") do %>
-      <i class="fa-solid fa-earth-oceania"></i>
-      <p>Oceania</p>
-    <% end %>
+<div class="container">
+  <%= render "filter_by_continent" %>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <% @beaches.each do |beach| %>
+        <div class="col d-flex justify-content-center">
+          <%= link_to beach_path(beach.id) do %>
+            <%= render "shared/card", beach: beach %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
-  <div class="row justify-content-lg-start justify-content-md-center justify-content-sm-center">
-    <% @beaches.each do |beach| %>
-      <div class="col mb-4 d-flex flex-grow-0">
-        <%= link_to beach_path(beach.id) do %>
-          <%= render "shared/card", beach: beach %>
-        <% end %>
-      </div>
-    <% end %>
+
+  <div class="p-3 maps">
+    <h2>Beaches location</h2>
+    <%= render "index_map" %>
   </div>
-</div>
-<div class="p-3" style="margin-left: 50px">
-  <h2>Beaches location</h2>
-  <%= render "index_map" %>
+
 </div>
