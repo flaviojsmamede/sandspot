@@ -7,6 +7,14 @@ class PagesController < ApplicationController
 
   def profile
     @user = current_user
-    @bookings = Booking.find(@user.id)
+    @bookings = Booking.all.select { |booking| booking.user_id == @user.id }
+
+    @user_bookings = []
+
+    @bookings.each do |booking|
+      @pack = Pack.find(booking.pack_id)
+      @beach = Beach.find(@pack.beach_id)
+      @user_bookings << { beach: @beach, booking: booking }
+    end
   end
 end
