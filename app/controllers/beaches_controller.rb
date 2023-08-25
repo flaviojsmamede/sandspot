@@ -5,7 +5,7 @@ class BeachesController < ApplicationController
     @beaches = Beach.all
 
     if params[:query].present?
-      sql_subquery = "name ILIKE :query OR location ILIKE :query"
+      sql_subquery = "name ILIKE :query OR location ILIKE :query OR continent ILIKE :query"
       @beaches = @beaches.where(sql_subquery, query: "%#{params[:query]}%")
     end
 
