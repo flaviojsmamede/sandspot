@@ -9,6 +9,7 @@
 # t.string "location"
 # t.text "description"
 # t.string "image_url"
+Booking.destroy_all
 Pack.destroy_all
 Beach.destroy_all
 
