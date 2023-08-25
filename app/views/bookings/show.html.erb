@@ -1,8 +1,0 @@
-<h1>MY BOOKINGS</h1>
-<% @bookings.each do |booking| %>
-  <div class="d-flex justify-content-between">
-    <h6><%= booking.beach.name %></h6>
-    <p class="text-secondary"><%= booking.date %></p>
-    <p class="text-secondary"><%= booking.status %></p>
-  </div>
-<% end %>

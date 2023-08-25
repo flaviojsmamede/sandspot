@@ -1,0 +1,12 @@
+<div class="container" style="margin-bottom: 80px;">
+  <div class="row d-flex flex-row mt-5 mb-5">
+    <div class="col">
+      <h3 class="mb-4">My Bookings</h3>
+      <div class="justify-content-between mb-3">
+        <% @bookings.each do |booking| %>
+          <%= render "card_bookings", booking: booking %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
