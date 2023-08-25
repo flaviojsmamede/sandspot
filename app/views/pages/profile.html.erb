@@ -1,7 +1,8 @@
 <div class="container">
-  <div class="row d-flex flex-row mt-5 mb-5 justify-content-between gap-5">
+  <div class="row d-flex flex-row mt-5 mb-5">
     <div class="col">
       <h3 class="mb-4">My Profile</h3>
+      <img class="user-photo" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=2000" />
       <div class="d-flex flex-row justify-content-between border-bottom mb-3">
         <div>
           <p>Full Name</p>
@@ -22,18 +23,6 @@
           <p>Password</p>
           <p class="text-secondary">*********</p>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <h3 class="mb-4">My Bookings</h3>
-      <div class="d-flex flex-column gap-3">
-      <% @bookings.each do |booking| %>
-          <div class="d-flex justify-content-between">
-            <h6><%= booking.beach.name %></h6>
-            <p class="text-secondary"><%= booking.date %></p>
-            <p class="text-secondary"><%= booking.status %></p>
-          </div>
-      <% end %>
       </div>
     </div>
   </div>
